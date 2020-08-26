@@ -1,0 +1,153 @@
+<html>
+  <head>
+    <title>Revisão07</title>
+    <style type="text/css">
+    .editor {
+      color: #00af;
+      font-size: 20px;
+      font-weight: bolder;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      text-decoration: solid;
+      text-transform:none;
+      font-style: italic;
+      text-indent: 100px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+    }
+    div {}
+    .caixa{}
+    #cx1{
+      position: relative;
+      left: 0px;
+      top: 0px;
+      width: 300px;
+      height: 300px;
+      background-color: blueviolet;
+    }
+    #texto {
+      color: #f10045;
+      font-size: 20px;
+      font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    #video {
+      position:relative;
+      top: 0px;
+      left: 0px;
+      width: 300px;
+      height: 300px;
+      border: #000000 solid;
+    }
+    body {
+      background-color: #a1a1a1;
+
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <a name="inicio"></a>
+    <a href="#fim">final</a>
+    <h1>Texto para exemplo.</h1>
+
+    <p class="editor">A única linguagem que o navegador consegue interpretar para a exibição de conteúdo é o HTML.
+      Para iniciar a exploração do HTML, vamos imaginar o seguinte caso: o navegador realizou uma
+      requisição e recebeu como corpo da resposta o seguinte conteúdo:
+      Mirror Fashion.
+      Bem-vindo à Mirror Fashion, sua loja de roupas e acessórios.
+      Confira nossas promoções.
+      Receba informações sobre nossos lançamentos por email.
+      Navegue por todos nossos produtos em catálogo.
+      Compre sem sair de casa.
+      Para conhecer o comportamento dos navegadores quanto ao conteúdo descrito antes, vamos
+      reproduzir esse conteúdo em um arquivo de texto comum, que pode ser criado com qualquer editor de
+      texto puro. Salve o arquivo como index.html e abra-o a partir do navegador à sua escolha.
+    </p>
+
+    <p id="texto">Parece que obtemos um resultado um pouco diferente do esperado, não? Apesar de ser capaz de
+      exibir texto puro em sua área principal, algumas regras devem ser seguidas caso desejemos que esse texto
+      seja exibido com alguma formatação, para facilitar a leitura pelo usuário final.
+      Usando o resultado acima podemos concluir que o navegador por padrão:
+      Pode não exibir caracteres acentuados corretamente;
+      Não exibe quebras de linha.
+      Para que possamos exibir as informações desejadas com a formatação, é necessário que cada trecho
+      de texto tenha uma marcação indicando qual é o significado dele. Essa marcação também influencia a
+      maneira com que cada trecho do texto será exibido. A seguir é listado o texto com uma marcação
+      correta:
+    </p>
+
+    <p>Agora, o resultado é exibido de maneira muito mais agradável e legível. Para isso, tivemos que
+      utilizar algumas marcações do HTML. Essas marcações são chamadas de tags, e elas basicamente dão
+      significado ao texto contido entre sua abertura e fechamento.
+      Apesar de estarem corretamente marcadas, as informações não apresentam nenhum atrativo estético
+      e, nessa deficiência do HTML, reside o primeiro e maior desafio do programador front-end.
+      O HTML foi desenvolvido para exibição de documentos científicos. Para termos uma comparação, é
+      como se a Web fosse desenvolvida para exibir monografias redigidas e formatadas pela Metodologia do
+      Trabalho Científico da ABNT. Porém, com o tempo e a evolução da Web e de seu potencial comercial,
+      tornou-se necessária a exibição de informações com grande riqueza de elementos gráficos e de interação.
+    </p>
+
+    <p>O HTML é um conjunto de tags responsáveis pela marcação do conteúdo de uma página no
+      navegador. No código que vimos antes, as tags são os elementos a mais que escrevemos usando a sintaxe
+      <nomedatag> . Diversas tags são disponibilizadas pela linguagem HTML e cada uma possui uma
+      funcionalidade específica.
+      No código de antes, vimos por exemplo o uso da tag <h1> . Ela representa o título principal da
+      página.
+      <h1>Mirror Fashion</h1>
+      Note a sintaxe. Uma tag é definida com caracteres < e > , e seu nome (h1 no caso). Muitas tags
+      possuem conteúdo, como o texto do título ("Mirror Fashion"). Nesse caso, para determinar onde o
+      conteúdo acaba, usamos uma tag de fechamento com a barra antes do nome: </h1> .
+      Algumas tags podem receber atributos dentro de sua definição. São parâmetros usando a sintaxe de
+      nome=valor . Para definir uma imagem, por exemplo, usamos a tag <img> e, para indicar qual
+      imagem carregar, usamos o atributo src :</p>
+    <p>A tag  contém informações sobre nosso documento que são de interesse somente do
+      navegador, e não dos visitantes do nosso site. São informações que não serão exibidas na área do
+      documento no navegador.
+      A especificação obriga a presença da tag de conteúdo  dentro do nosso  ,
+      permitindo especificar o título do nosso documento, que normalmente será exibido na barra de título da
+      janela do navegador ou na aba do documento.
+      Outra configuração muito utilizada, principalmente em documentos cujo conteúdo é escrito em um
+      idioma como o português, que tem caracteres como acentos e cedilha, é a configuração da codificação de
+      caracteres, chamado de encoding ou charset.
+      Podemos configurar qual codificação queremos utilizar em nosso documento por meio da
+      configuração de charset na tag  . Um dos valores mais comuns usados hoje em dia é o UTF-8,
+      também chamado de Unicode. Há outras possibilidades, como o latin1, muito usado antigamente.
+      O UTF-8 é a recomendação atual para encoding na Web por ser amplamente suportada em
+      navegadores e editores de código, além de ser compatível com praticamente todos os idiomas do mundo.
+      É o que usaremos no curso.</p>
+        <a href="#inicio">inicio</a>
+        <a name="fim"></a>
+    <object data="media/a-ha - Early Morning 480 x 640.mp4" width="200" height="200">
+      <param name="autostart" value="true"> 
+    
+    </object><br><br><br>
+
+    <div id="cx1">
+      <img src="img/5237019-2-bakugou-katsuki-manga-transparent-free-transparent-png-katsuki-bakugou-png-820_831_preview.png" style="width: 300px;">
+
+    </div><br><br><br><br>
+    
+    <div id="video">
+      <object data="media/a-ha - Early Morning 480 x 640.mp4" width="300" height="300" >
+        <param name="autostart" value="true">
+      </object>
+    </div>
+    <div id="cx3"></div>
+    <div id="cx4"></div>
+
+    <table border="" width="600">
+      <tr>
+        <td colspan="2" width="300">loja</td><td width="300">produtos </td>
+      </tr>
+      <tr>
+        <td width="300">Ganer</td><td width="300">PCs</td>
+      </tr>
+    </table>
+
+
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>treinamento</title>
+    </head>
+    <body>
+
+        <script>
+            var name = "Erick";
+
+            document.write("<span style='color: red; font-size: 50px'>Seja bem vindo " + name + "</span")
+
+
+
+
+            var nome = confirm("Seu nome é Erick");
+            if (nome == true){
+                alert("Seja bem vindo Erick;");
+
+            }else{
+                nome = prompt("Se seu nome não é Erick, Então digite seu nome: ", "");
+                alert("Seja bem vindo "+ nome);
+            }
+            var i;
+            var arr = new Array();
+            arr[0] = "Erick";
+            arr[1] = "Jose";
+            arr[2] = "Gabriel";
+
+            arr.unshift("Jonas");
+            arr.unshift("Quadrado");
+
+            arr.shift();
+
+            arr.pop();
+
+            arr.push("Kaiba");
+
+            for(i = 0; i < arr.length; i++){
+                document.write(arr[i]);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Formatação de formulários</title>
+        <style type="text/css">
+            body{
+                background-color: #eeeeee;
+            }
+            .bt{
+                background-color: #c00000;
+                color: #ffffff;
+                width: 100px;
+                height: 25px;
+                border: 0px;
+                cursor: pointer;
+            }
+
+            input:hover, select:hover, textarea:hover {
+                border: 2px solid #0000ff;
+            }
+
+            label{
+                color: #606060;
+                font-weight: bold;
+            }
+            input:focus, select:focus, textarea:focus {
+                background-color: #ff8080;
+            }
+
+        </style>
+     <!--<link rel="stylesheet" type="text/css" href="formularioCss.css">-->
+
+    </head>
+
+    <body>
+        <form name="F_formulario" method="POST" action="">
+            <label >Nome:</label><br>
+            <input type="text" name="F_nome" size="40" maxlength="20"><br><br>
+
+            <label>Email:</label><br>
+            <input type="text" name="F_email" size="40" maxlength="20"><br><br>
+
+            <label>Senha:</label><br>
+            <input type="password" name="F_senha" size="40" maxlength="20"><br><br>
+
+            <label>Qual anime que você gosta?</label><br>
+            <input type="checkbox" name="F_naruto" value="naruto"><label>Naruto</label><br>
+            <input type="checkbox" name="F_dragon_ballZ" value="DBZ"><label>Dragon ball Z</label><br>
+            <input type="checkbox" name="F_pokemon" value="pokemon"><label> Pokémon</label><br>
+            <input type="checkbox" name="F_digimon" value="digimon"><label>Digimon</label><br>
+            <input type="checkbox" name="F_drifters" value="drifters"><label>Drifters</label><br><br>
+
+            <label>você tem internet na sua casa?</label><br>
+            <input type="radio" name="F_opcao" value="s"><label>Sim</label><br>
+            <input type="radio" name="F_opcao" value="n"><label>Não</label><br><br>
+
+            <label>Estado:</label>
+            <select name="F_estado">
+                <option value="S/E">-Selecione-</option>
+                <option value="PB">Paraíba</option>
+                <option value="PE">Pernambuco</option>
+                <option value="AL">Alagoas</option>
+                <option value="BA">Bahia</option>
+                <option value="RN">Rio Grande do Norte</option>
+            </select><br><br>
+
+            <label>Comentário</label><br>
+            <textarea name="F_comentario" cols="50" rows="15"></textarea><br><br>
+
+            <input type="submit" class="bt" name="F_enviar" value="Enviar">
+            <input type="reset" class="bt" name="F_limpar" value="Limpar">
+            <input type="button" class="bt" name="F_Sem" value="Sem ação">
+
+        </form>
+        
+    </body>
+
+</html>

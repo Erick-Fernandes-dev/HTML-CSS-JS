@@ -1,0 +1,15 @@
+h1{
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+table{
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+body{
+    background-image: url();
+}

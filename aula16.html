@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Formulário</title>
+    </head>
+
+    <body>
+        <form name="F_aula" method="POST" action="">
+            <label >Nome: </label><br>
+            <input type="text" name="F_aula" size="40" maxlength="30"><br><br>
+
+            <label >Senha: </label><br>
+            <input type="password" name="F_senha" size="40" maxlength="20"><br><br>
+
+
+            <label>Qual esporte você pratica?</label><br>
+            <input type="checkbox" name="F_Futebol" value="futebol"><label>Futebol</label><br>
+            <input type="checkbox" name="F_Natacao" value="natacao"><label>Natação</label><br>
+            <input type="checkbox" name="F_Basquete" value="basquete"><label>Basquete</label><br>
+
+            <label>você possui algum veículo?</label><br>
+            <input type="radio" name="F_veiculo" value="s"><label>Sim</label><br>
+            <input type="radio" name="F_veiculo" value="n"><label>Não</label><br><br>
+
+            <label>Estado:</label><br>
+            <select name="F_Estado">
+                <option value="MG">Minas Gerais</option>
+                <option value="PB">Paraíba</option>
+                <option value="PE">Pernambuco</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+            </select><br><br>
+
+            <label>Comentário:</label><br>
+            <textarea name="F_comentario" cols="45" rows="5"></textarea><br><br>
+
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+            <input type="button" value="sem ação" onclick="boasVindas()">
+            <script>
+                function boasVindas(){
+                    alert("Seja bem vindo")
+                }
+
+            </script>
+
+
+        </form>
+        
+    </body>
+
+</html>

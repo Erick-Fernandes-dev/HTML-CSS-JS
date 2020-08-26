@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aula09-imagens</title>
+  <style type="text/css">
+    * {/*geral*/
+      margin: 0;
+      padding: 0;
+      outline: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: cadetblue;
+      background-image: url(img/f4.jpg);
+      background-size: cover;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+      border: 10px solid #000000;
+      cursor: hand;
+    }
+    
+    img:hover {
+      border: 10px solid #ff0000;
+      zoom: 150%;
+    }    
+  </style>
+</head>
+<body>
+  <nav>
+    
+  </nav>
+  <img src="img/f5.jpg">
+  <img src="img/f6.jpg">
+  <img src="img/f4.jpg">
+  <button onclick="alertButton()">LOGIN</button>
+  <script>
+    function alertButton() {
+    
+    alert('olá')
+    
+    }
+  </script>
+</body>
+</html>

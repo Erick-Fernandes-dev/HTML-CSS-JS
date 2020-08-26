@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>javascript - parte07(Arrays)</title>
+        <script language = "javascript">
+
+            var algumasCoisas = new Array();
+            var numeros = new Array(7, 1, 5, 9, 4, 2, 3, 6, 8, 0);
+            var i;
+
+            algumasCoisas[0] = "Erick";
+            algumasCoisas[1] = "paulo";
+            algumasCoisas[2] = "Goku";
+            algumasCoisas[3] = "naruto";
+            algumasCoisas[4] = "livro";
+            algumasCoisas[5] = "carro";
+            algumasCoisas[6] = "vento";
+            algumasCoisas[7] = "navio";
+
+
+            // ADCIONAM NO FINAL
+            algumasCoisas.push("Pokemon");
+            algumasCoisas.push("Dragon ball Z");
+            algumasCoisas.push("Katana");
+
+            //REMOVEM ULTIMOS ELEMENTOS
+            algumasCoisas.pop();
+            algumasCoisas.pop();
+
+
+            // ADCIOANM NO INÍCIO
+            algumasCoisas.unshift("Espada");
+            algumasCoisas.unshift("Cadeira");
+
+            //REMOVEM PRIMEIROS ELEMENTOS
+            algumasCoisas.shift()
+            algumasCoisas.shift()
+            algumasCoisas.shift()
+
+            /*
+            o push --> respectivamnte adiciona um valor dentro
+            de um array, só que o valor fica  no final dessa arrey.
+
+            o pop --> diferente do push, ele remove o ultimo valor
+            de um arrey.
+
+            unshift --> é usado  para adicioanr algum valor no inicio de um
+            arrey.
+
+            shift --> remove o primeiro elemento do arrey;
+
+            <hr> --> uma linha que divide.
+
+            .sort() --> ordena uma arrey.
+
+
+            alert(algumasCoisas[3]);
+            alert(algumasCoisas[2]);
+            */
+
+            for(i = 0; i < algumasCoisas.length; i++){
+                document.write(algumasCoisas[i])
+                document.write("<br>")
+
+            }
+
+            numeros.sort()
+
+            document.write("<hr/>");
+
+            for(i = 0; i < numeros.length; i++){
+                document.writeln(numeros[i]);
+                document.write("<br>")
+
+            }
+
+
+
+            //document.write(algumasCoisas[0])
+
+        </script>
+    </head>
+
+</html>

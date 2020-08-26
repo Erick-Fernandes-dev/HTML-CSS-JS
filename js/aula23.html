@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>javascript - parte06</title>
+
+        <meta charset="UTF-8">
+
+        <script language = "javascript">
+            function addPag(link){
+                //window.location.href = link;
+                window.open(link);
+
+            }
+
+        </script>
+
+    </head>
+
+    <body>
+        <select name="bebidas" size="6" onchange = "addPag(value)">
+
+            <option value="lista/refrigerante.html">Refrigerante</option>
+            <option value="lista/cerveja.html">Cerveja</option>
+            <option value="lista/vinho.html">Vinho</option>
+            <option value="lista/agua.html">Água</option>
+
+        </select>
+    </body>
+
+</html>
